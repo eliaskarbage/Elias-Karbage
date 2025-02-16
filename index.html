@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Karbage - Advocacia</title>
+    <link rel="stylesheet" href="styleadv.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width:100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+
+header {
+    width:100%;
+    height: 90vh;
+    background: linear-gradient(rgb(16,16,16,0.5),rgba(25,25,25,0.5)), url(escala-de-justica-de-ouro-na-frente-do-livro-de-leitura-de-advogado-na-mesa_23-2147898544.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px black;
+    
+    
+}
+
+.menu {
+    text-transform: uppercase;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    flex-wrap: wrap;
+    
+
+}
+
+.logo h2{
+    font-size: 20px;
+    text-align: center;
+    color:wheat;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    
+    
+    
+}
+
+
+
+.apresentação-ekadv {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(rgb(16,16,16,0.5),rgba(25,25,25,0.5)), url(288957-fernanda-entregar-ate-dia-2904-futuro-da-advocacia-saiba-o-que-esperar-e-como-se-preparar.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 2.5vh;
+    
+    
+    
+}
+
+.header-menu .lista {
+    display: flex;
+    list-style:none;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 500px;
+    
+    
+    
+   
+    
+    
+}
+
+.menu .lista a {
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 10px;
+    transition: 2ms ease-in;
+    position: relative;
+    
+
+    
+
+}
+
+.menu .lista a:before {
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: wheat;
+    transition: all 1s ease;
+
+}
+
+.menu .lista a:hover:before {
+    width: 100%;
+    background-color: white;
+ }
+
+ .apresentação-ekadv p {
+    margin: 80px 40px 40px;
+    text-align: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-transform: uppercase;
+ }
+
+ .apresentação-ekadv h1 {
+    background: black;
+    color:rgb(231, 176, 65);
+    font-style: italic;
+    padding: 8px;
+    
+     
+ }
+
+ .logo h2 {
+    background: black;
+    color: rgb(231, 176, 65);
+    font-style: italic;
+    border-radius: 8px;
+    padding:5px;
+ }
+
+ .logo p {
+    color:whitesmoke;
+ }
+
+ .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    background-image: url(Simbolos-do-Direito-e-da-Advocacia-e-seus-significados.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    
+
+ }
+
+ .item {
+    padding:10px;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+    
+ }
+
+ .AP {
+    padding:10px;
+    text-align: center;
+    background-color: black;
+    color: rgb(231, 176, 65);
+    font-size: 18px;
+    
+
+ }
+
+ .ATT {
+    background-color: black;
+    color:rgb(231, 176, 65);
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    
+    
+ }
+
+ .atualização {
+   display:flex;
+   margin-top: 50px;
+   margin-left: 80px;
+   gap: 300px;
+   
+   
+
+    
+    
+    
+   
+   
+    
+    
+ }
+
+.text {
+    display:flex;
+    gap: 40px;
+    font-size: 14px;
+    background: linear-gradient(white, rgb(248, 207, 25));
+}
+
+.mark {
+    color:black;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background:linear-gradient(black,black,black, rgb(243, 182, 14));
+    color:white;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.footer-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.footer-form .footer-contact {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 12px;
+}
+
+.footer-form form {
+    display:flex;
+    flex-direction: column;
+  
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 12px;
+    background-color: rgb(253, 249, 2);
+    border:none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer-contact p {
+    margin-bottom: 6px;
+}
+
+.footer-atendimento {
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.footer-form img {
+    border-radius: 10px;
+    margin-left: 5px;
+    
+    
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            
+            <nav class="header-menu">
+                <ul class="lista">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Elias Karbage Advocacia</a></li>
+                    <li><a href="#">Áreas Práticas</a></li>
+                    <li><a href="#">Atualizações</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <main class="logo">
+            <h2>Escritório de Advocacia Elias Karbage</h2>
+            <p>Referência de competência e celeridade na resolução de lides</p>
+            </main>
+            
+        </div>
+    </header>
+        
+        <section>
+        <div class="apresentação-ekadv">
+        <h1>Elias Karbage Advocacia</h1>
+        <br>
+        <p>Com mais de 20 anos de fundação, o escritório de advocacia Elias Karbage tem atuação nas áreas criminal, civil, empresarial, eleitoral, administrativa, familiar, sucessões, consumidor, internacional e trabalhista, sendo referência de competência e celeridade na resolução de lides no Estado do Ceará. Estamos à disposição para atender com excelência e contamos com profissionais altamente capacitados que possuem vasta expertise.</p>
+        </div>
+        </section>
+        
+        <section>
+            <h1 class="AP">Áreas Práticas</h1>
+            <div class="container">
+            
+                           
+                    <div class="item">Direito Penal</div>
+                    <div class="item">Direito Civil</div>
+                    <div class="item">Direito Digital / LGPD</div>
+                    <div class="item">Direito Tributário</div>
+                    <div class="item">Direito Sindical</div>
+                    <div class="item">Direito do Trabalho</div>
+                    <div class="item">Licitação e Infraestrutura</div>
+                    <div class="item">Direito Previdenciário</div>
+                    <div class="item">Direito internacional</div>
+                    <div class="item">Família e Sucessões</div>
+                    <div class="item">Empresarial e Societário</div>
+                    <div class="item">Direito Eleitoral</div>
+                    <div class="item">Direito do Consumidor</div>
+                    <div class="item">Direito Notarial e Registral</div>
+                    <div class="item">Direito Imobiliário</div>
+                    <div class="item">Direito Administrativo</div>
+                    <div class="item">Mediação e Arbitragem</div>
+                    <div class="item">Direito Desportivo</div>
+                    <div class="item">Falência e Recuperação de Empresas</div>
+                    <div class="item">Improbidade administrativa</div>
+                    
+                                     
+                    
+            
+                                       
+
+            </div>
+            </section>
+
+            <section>
+                <h1 class="ATT">Atualizações</h1>
+                <div class="atualização">
+                <img src="telemarketing.jpg">
+                <img src="vender-roupas-mercado-livre-revendedor.jpg">
+                <img src="hero-image.fill_.size_1248x702.v1611609073-1024x576.jpg">
+                     
+
+                </div> 
+                 <div class="text">
+                <a class="mark" href="https://www.conjur.com.br/2022-jul-18/ministerio-justica-suspende-telemarketing-abusivo-180-empresas/">Ministério da Justiça suspende telemarketing abusivo de 180 empresas</a>   
+                <a class="mark" href="https://www.conjur.com.br/2022-jul-12/mercado-livre-excluir-anuncios-suspeitos-fraudes/">Juiz ordena que Mercado Livre exclua anúncios suspeitos de fraudes</a>
+                <a class="mark" href="https://pauloquezado.com.br/2022/07/21/justica-reconhece-existencia-de-vinculo-de-emprego-entre-uber-e-motorista/">Justiça reconhece existência de vínculo de emprego entre Uber e motorista</a>
+
+                 </div> 
+                   
+            </section>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-form">
+                        <h3>Fale conosco:</h3>
+                        <form>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name">
+        
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                            
+                            <label for="tel">Telefone:<img src="Sem título.png"></label>
+                            <input type="tel" id="tel" name="tel">
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div><!--footer-form-->
+                    <div class="footer-atendimento">
+                        <h3>Horário de Atendimento</h3>
+                        <br>
+                        <p>Seg - Sex</p>
+                        <p>8:00h - 12:00h</p>
+                        <p>14:00h - 18:00h</p>
+                        <br>
+                        <p>Sáb – Dom</p>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h2 style="color:rgb(255, 196, 0)">Elias Karbage Advocacia</h2>
+                        <br>
+                        <h3>Informações de contato:</h3>
+                        <p>Avenida Dom Luís, nº 0000 - Meireles, Fortaleza/CE</p>
+                        <p>Email: eliaskarbageadvocacia@adv.com.br</p>
+                        <p>Instagram: @advocaciaeliaskarbage</p>
+                        <p>Contato: (85) 99999-9999 <img src="Sem título.png"></p>
+                    </div> <!--footer-contact-->
+                </div>
+            </footer>
+</body>
+</html>
